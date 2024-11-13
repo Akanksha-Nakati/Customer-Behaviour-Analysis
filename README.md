@@ -1,5 +1,8 @@
 # Customer-Behaviour-Analysis
 
+![alt text](Netflix user.png)
+
+
 # Netflix Customer Behavior Analysis
 
 A comprehensive analysis of Netflix's userbase data, focusing on customer behavior patterns, revenue generation, and user retention. This project leverages demographic and behavioral data to deliver actionable insights that can drive customer engagement, enhance retention, and inform strategic decision-making.
