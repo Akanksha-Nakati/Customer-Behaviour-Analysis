@@ -1,6 +1,7 @@
 # Customer-Behaviour-Analysis
 
-![alt text]([Netflix user.png](https://github.com/Akanksha-Nakati/Customer-Behaviour-Analysis/blob/6bcecfffec9434c12359126db25b692c3601a289/Netflix%20user.png))
+![alt text](https://github.com/Akanksha-Nakati/Customer-Behaviour-Analysis/blob/main/Netflix%20user.png)
+
 
 
 # Netflix Customer Behavior Analysis
