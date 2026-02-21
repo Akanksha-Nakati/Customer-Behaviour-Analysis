@@ -1,86 +1,94 @@
-# Customer-Behaviour-Analysis
+# 📺 Netflix Customer Behaviour Analysis
 
-![alt text](https://github.com/Akanksha-Nakati/Customer-Behaviour-Analysis/blob/main/Netflix%20user.png)
+> A comprehensive analysis of Netflix's userbase focusing on customer behavior patterns, subscription preferences, revenue generation, and user retention — visualized through interactive Tableau dashboards.
 
-
-
-# Netflix Customer Behavior Analysis
-
-A comprehensive analysis of Netflix's userbase data, focusing on customer behavior patterns, revenue generation, and user retention. This project leverages demographic and behavioral data to deliver actionable insights that can drive customer engagement, enhance retention, and inform strategic decision-making.
+![Netflix Dashboard](Netflix%20user.png)
 
 ---
 
-## Situation
-Netflix, as a leading streaming platform, offers multiple subscription plans tailored to customer needs across the globe. Given the competitive landscape, understanding customer behavior is crucial for optimizing revenue and improving user experience. This project undertakes a detailed analysis of Netflix's userbase to identify the key factors driving subscription preferences, engagement, and churn. By examining age, gender, country, device type, and payment history, this analysis seeks to uncover trends that influence user retention and revenue growth.
+## 📌 The Problem
 
-## Task
-The primary objective of this analysis is to examine customer behavior patterns that influence:
-- **Revenue Generation**: Understanding how subscription type preferences impact revenue.
-- **User Retention**: Identifying factors that contribute to longer customer tenure and reduce churn.
-- **User Engagement**: Analyzing device usage and its effect on content consumption.
+Netflix operates across multiple subscription tiers and a highly competitive streaming market. Retaining customers and maximizing revenue requires a deep understanding of *who* the users are, *how* they engage with the platform, and *what* drives them to stay or leave.
 
-Key focus areas include:
-1. Segmenting user preferences by subscription type (Basic, Standard, Premium).
-2. Analyzing the impact of demographics (age, gender, and country) on revenue and retention.
-3. Assessing device influence on user engagement.
-4. Identifying churn risk through payment activity and subscription duration patterns.
-
-## Action
-To achieve the project goals, the analysis utilized the following fields from the dataset:
-- **Subscription Type**: Categorized as Basic, Standard, and Premium to identify revenue and engagement patterns.
-- **Monthly Revenue**: Revenue generated per user, based on subscription plan.
-- **Join Date and Last Payment Date**: Used to calculate customer tenure and identify churn risk.
-- **Country, Age, Gender, Device Type**: Key demographic and behavioral indicators.
-
-### Key Actions Taken
-- **Segmentation by Subscription Type**: Users were grouped by plan type to observe revenue contribution and preferences.
-- **Demographic Analysis**: Cross-analysis of age, gender, and country to identify trends in subscription preferences.
-- **Device Usage Analysis**: Assessed the impact of device type (Smartphone, Laptop, Smart TV) on user engagement and plan choice.
-
-## Results
-The analysis provided critical insights into customer behavior, contributing to actionable strategies for retention and revenue optimization:
-
-### Revenue Generation
-- **Premium Plans**: Higher revenue contribution, especially among middle-aged users (35-45).
-- **Basic Plans**: Popular among younger users (under 30), particularly in the United States and Germany.
-
-### User Retention and Behavior
-- **Device Influence**: Users on Smart TVs and Laptops show longer tenures and higher engagement compared to smartphone users.
-- **Geographic Trends**: Premium plans are most popular in the United States and Canada, while Germany has a higher proportion of Basic plan subscribers.
-
-### Device Preferences
-- **Smartphone Users**: Tend to opt for shorter-term, lower-tier plans (Basic).
-- **Larger Screens (Smart TV)**: Customers using larger screen devices favor Premium or Standard plans, indicating a correlation between device type and spending.
-
-## Recommendations
-Based on these findings, Netflix can consider the following strategies:
-1. **Incentives for Smartphone Users**: Offer upgrades or tailored content for smaller screens to encourage higher-tier plan adoption.
-2. **Targeted Regional Campaigns**: Roll out marketing campaigns for Basic and Standard plans in regions where these plans are popular, such as Germany.
-3. **Device-Specific Promotions**: Encourage larger screen consumption (e.g., Smart TVs) to boost user engagement and revenue.
-
-## Conclusion
-This customer behavior analysis offers actionable insights for Netflix to enhance user experience, tailor content to user preferences, and improve customer retention. By leveraging demographic, device, and engagement data, Netflix can optimize its offerings to meet the evolving needs of its diverse user base.
+This project analyzes demographic and behavioral data to answer: *which users are most valuable, which are at risk of churning, and what can Netflix do about it?*
 
 ---
 
-## Project Structure
-- **Data Analysis Notebook**: Analysis and visualization of customer behavior data.
-- **Tableau Workbook**: Contains interactive dashboards visualizing key insights across demographics, devices, and churn risk factors.
+## 🔍 What This Project Covers
 
-## Getting Started
-1. **Prerequisites**: Install Tableau Desktop.
-2. **Installation**:
-   - Clone the repository.
-   - Install necessary Python libraries using `pip install -r requirements.txt`.
+### 📊 Analysis Areas
 
-3. **Usage**:
-   - Open the Tableau workbook to explore interactive visualizations.
+- **Revenue Generation** — How subscription type preferences (Basic, Standard, Premium) impact overall revenue
+- **User Retention** — Identifying patterns in customer tenure and payment history to flag churn risk
+- **User Engagement** — How device type (Smartphone, Laptop, Smart TV) influences plan choice and content consumption
+- **Demographic Segmentation** — Cross-analysis of age, gender, and country against subscription behavior
 
-## Contributing
-Contributions are welcome! Please follow the guidelines in the `CONTRIBUTING.md` file.
+### 🗂️ Dataset Fields Used
+
+| Field | Purpose |
+|---|---|
+| `Subscription Type` | Segment users by plan tier (Basic / Standard / Premium) |
+| `Monthly Revenue` | Measure revenue contribution per user |
+| `Join Date & Last Payment Date` | Calculate tenure and identify churn risk |
+| `Country`, `Age`, `Gender` | Demographic profiling |
+| `Device Type` | Understand engagement patterns across devices |
 
 ---
 
-## License
-This project is licensed under the MIT License. See `LICENSE` for more details.
+## 💡 Key Findings
+
+- 💳 **Premium Plans** drive the highest revenue, especially among middle-aged users (35–45)
+- 📱 **Basic Plans** are most popular with users under 30, particularly in the US and Germany
+- 📺 **Smart TV & Laptop users** show longer tenures and higher engagement than smartphone users
+- 🌍 **Premium plans dominate** in the US and Canada; Germany skews heavily toward Basic
+- 📉 **Smartphone users** tend toward shorter-term, lower-tier subscriptions — a potential churn risk segment
+
+---
+
+## 🎯 Strategic Recommendations
+
+1. **Target smartphone users** with upgrade incentives or mobile-optimized content to drive higher-tier adoption
+2. **Run regional campaigns** for Basic and Standard plans in markets like Germany where those tiers are most popular
+3. **Promote larger screen consumption** (Smart TV bundles, device partnerships) to boost engagement and reduce churn
+4. **Flag churn-risk users** based on tenure length and gaps in payment activity for proactive outreach
+
+---
+
+## 🛠️ Tools & Technologies
+
+| Tool | Role |
+|---|---|
+| **Tableau Desktop** | Interactive dashboard development and visualization |
+| **Microsoft Excel** | Source dataset (`Netflix Userbase.xlsx`) |
+
+---
+
+## 📂 Repository Structure
+
+```
+├── Netflix Userbase.xlsx                    # Source dataset
+├── Customer Behaviour Analysis(Tableau).twb # Tableau workbook with all dashboards
+├── Netflix user.png                         # Dashboard preview image
+└── README.md
+```
+
+---
+
+## 🚀 Getting Started
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Akanksha-Nakati/Customer-Behaviour-Analysis.git
+   ```
+
+2. **Open the Tableau workbook**
+   - Requires [Tableau Desktop](https://www.tableau.com/products/desktop) or [Tableau Public](https://public.tableau.com/)
+   - Open `Customer Behaviour Analysis(Tableau).twb` to explore all interactive dashboards
+
+3. **Explore the dataset**
+   - Raw data is in `Netflix Userbase.xlsx` — open with Excel or any spreadsheet tool
+
+---
+
+> **Note:** This project uses a publicly available Netflix userbase dataset for analytical and educational purposes.
 
